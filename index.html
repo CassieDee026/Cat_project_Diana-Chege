@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MY portfolio</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo @.jpg" class="logo">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">services</a></li>
+                        <li><a href="#">portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div id="header-text">
+                    <p>Software Developer </p>
+                    <p>cyber Security</p>
+                    <h1>Hi, I'm <span>Diana Mumbi</span><br>from Kenya</h1>
+                </div>
+            </div>
+        </div>
+        <!-- about section -->
+        <div id="About">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/First photo.jpg" alt="images">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p></p>
+                        <div class="tab-titles">
+                            <P class="tab-links active-link" onclick="opentab('Skills')">Skills</P>
+                            <P class="tab-links" onclick="opentab('Experiences')">Experiences</P>
+                            <P class="tab-links" onclick="opentab('Education')">Education</P>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Development</span><br>Web app Development</li>
+                                <li><span>Networking</span><br>Providing internet</li>
+                                <li><span>App Development</span><br>Building Android apps</li>
+                            </ul>
+                        </div>
+
+                        
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>Web Development</span><br>Web app Development</li>
+                                <li><span>Networking</span><br>Providing internet</li>
+                                <li><span>App Development</span><br>Building Android apps</li>
+                            </ul>
+                        </div>
+
+                        
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>2023- current </span><br>in KCA persusing information security and forensics</li>
+                                <li><span>2021- 2023</span><br>information Technology</li>
+                                <li><span>2023</span><br>cisco Networking</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tablinks = document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for (tablinks of tablinks){
+                    tablink.classlist.remove("active-link");
+            }
+            for (tabcontent of tabcontents){
+                    tabcontent.classlist.remove("active-tab");
+        }
+    }
+        </script>
+    </body>
+</html>
