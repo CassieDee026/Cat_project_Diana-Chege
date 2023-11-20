@@ -1,88 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MY portfolio</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div id="header">
-            <div class="container">
-                <nav>
-                    <img src="images/logo @.jpg" class="logo">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">about</a></li>
-                        <li><a href="#">services</a></li>
-                        <li><a href="#">portfolio</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-                <div id="header-text">
-                    <p>Software Developer </p>
-                    <p>cyber Security</p>
-                    <h1>Hi, I'm <span>Diana Mumbi</span><br>from Kenya</h1>
-                </div>
-            </div>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---box icons -->
+  
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!---custom css2w-->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!----header design---->
+    <header class="header">
+      <a href="#" class="logo">Portfolio</a>
+
+      <i class='bx bx-menu' id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="#home" class="active" >Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <!-----home section  design----->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>hello, its me</h3>
+        <h1>Diana Mumbi Chege</h1>
+        <h3>And i am a<span>web developer</span></h3>
+        <p>I am passaionate web developer dedicated to crafting seamless digital experiences.<br>
+        I specialize in creating responsive and interactive websites for businesses of all sizes.
+      my portfolio is a testament to my commiment to innovation and user-centric design</p>
+        <div class="social media">
+          <a href="" target="_blank"><i class='bx bxl-github'></i></a>
+          <a href="" target="_blank"><i class='bx bxl-instagram'></i></a>
+          <a href="" target="_blank"><i class='bx bxl-twitter'></i></a>
+          <a href="" target="_blank"><i class='bx bxl-facebook'></i></a>
+          <a href="" target="_blank"><i class='bx bxl-linkedin'></i></a>
         </div>
-        <!-- about section -->
-        <div id="About">
-            <div class="container">
-                <div class="row">
-                    <div class="about-col-1">
-                        <img src="images/First photo.jpg" alt="images">
-                    </div>
-                    <div class="about-col-2">
-                        <h1 class="sub-title">About Me</h1>
-                        <p></p>
-                        <div class="tab-titles">
-                            <P class="tab-links active-link" onclick="opentab('Skills')">Skills</P>
-                            <P class="tab-links" onclick="opentab('Experiences')">Experiences</P>
-                            <P class="tab-links" onclick="opentab('Education')">Education</P>
-                        </div>
+        <a href="#" class="btn">Download cv</a>
+      </div>
+      <div class="home-img">
+        <img src="images/pic1.jpg" alt="porfile">
+      </div>
+</div>
+    </section>
+    <!---about section design-->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="images/pic2.jpg" alt="profile pic">
+      </div>
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Web developer</h3>
+        <p>i am a software developer. i built my projects using 
+          <ol>
+          <li>html</li>
+          <li>.css</li>
+            <li>javascript</li>
+            <li>php</li>
+            <li>mysql</li>
+            <li>bootstrap</li>
+            <li>jquery</li>
+            <li>reactjs</li>
+          </ol>
+          to make a responsive websites or Application 
+        </p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </section>
 
-                        <div class="tab-contents active-tab" id="skills">
-                            <ul>
-                                <li><span>Web Development</span><br>Web app Development</li>
-                                <li><span>Networking</span><br>Providing internet</li>
-                                <li><span>App Development</span><br>Building Android apps</li>
-                            </ul>
-                        </div>
-
-                        
-                        <div class="tab-contents" id="Experience">
-                            <ul>
-                                <li><span>Web Development</span><br>Web app Development</li>
-                                <li><span>Networking</span><br>Providing internet</li>
-                                <li><span>App Development</span><br>Building Android apps</li>
-                            </ul>
-                        </div>
-
-                        
-                        <div class="tab-contents" id="Education">
-                            <ul>
-                                <li><span>2023- current </span><br>in KCA persusing information security and forensics</li>
-                                <li><span>2021- 2023</span><br>information Technology</li>
-                                <li><span>2023</span><br>cisco Networking</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!---services section desgin-->
+    <section class="services" id="services">
+      <h2 class="heading">My <span>Services</span></h2>
+      <div class="services-container">
+        <div class="service-box ">
+          <i class='bx bx-code-alt'></i>
+          <h3>Web Development</h3>
+          <p>Tailored to your unique needs, i design and develop websites that are both visually stunning and functionally robust.
+            from sleek portfolios to dynamic e-commerce platforms, i ensure your online prensence aligns seamlessly with your brand identity.
+          </p>
+          <a href="#" class="btn">Read More</a>
         </div>
-        <script>
-            var tablinks = document.getElementsByClassName("tab-links");
-            var tablinks = document.getElementsByClassName("tab-contents");
-            function opentab(tabname){
-                for (tablinks of tablinks){
-                    tablink.classlist.remove("active-link");
-            }
-            for (tabcontent of tabcontents){
-                    tabcontent.classlist.remove("active-tab");
-        }
-    }
-        </script>
-    </body>
+
+        <div class="services-container">
+          <div class="service-box ">
+            <i class='bx bx-laptop'></i>
+            <h3>Content Writing</h3>
+            <p>wordsmith dedicated to weaving narratives that captivate, inform, and resonate.
+               Dive into the realm of impactful content with my writing services, where each word is carefully chosen to forge connections and leave a lasting impression.</p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+      </div>
+    </section>
+    <!--portfolio section design -->
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">Latest <span>Portfolio</span></h2>
+      <div class="portfolio-box">
+        <img src="images/IMG2.jpg" alt=""> 
+        <div class="portfolio-layer">
+          <h4>Web design<s/h4>
+          <p></p>
+          <a href="#" <i class='bx bx-link-external'></i>
+        </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="images/IMG3.jpg" alt=""> 
+        <div class="portfolio-layer">
+          <h4>Web desgin</h4>
+          <p></p>
+          <a href="#" <i class='bx bx-link-external'></i>
+        </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="images/IMG4.jpg" alt=""> 
+        <div class="portfolio-layer">
+          <h4>Web design</h4>
+          <p></p>
+          <a href="#" <i class='bx bx-link-external'></i>
+        </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="images/IMG5.jpg" alt=""> 
+        <div class="portfolio-layer">
+          <h4>Web desgin</h4>
+          <p></p>
+          <a href="#" <i class='bx bx-link-external'></i>
+        </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="images/IMG6.jpg" alt=""> 
+        <div class="portfolio-layer">
+          <h4>Web design</h4>
+          <p></p>
+          <a href="#" <i class='bx bx-link-external'></i>
+        </div>
+      </div>
+    </section>
+
+    <!----contact section design---->
+    <section class="conctact" id="contact">
+      <h2 class="heading">Contact<span>Me!</span></h2>
+
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="full name">
+          <input type="email" placeholder="Email Address">
+        </div>
+
+        <div class="input-box">
+          <input type="number" placeholder="Mobile Number">
+          <input type="text" placeholder="Email Subject">
+        </div>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <input type="submit" value="Send Message" class="btn">
+      </form>
+    </section>
+    <!--footer-->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2023 by Cassie Dee | All Rights Reserved.</p>
+      </div>
+      <div class="footer-iconTop">
+        <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+      </div>
+    </footer>
+    <!---custom js-->
+    <script src="script.js"></script>
+  </body>
 </html>
